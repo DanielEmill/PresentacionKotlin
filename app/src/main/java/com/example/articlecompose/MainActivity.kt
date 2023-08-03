@@ -29,6 +29,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             ArticleComposeTheme {
+                // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
@@ -51,6 +52,12 @@ fun Presentacion(modifier: Modifier = Modifier)
         Image(
             painter = image,
             contentDescription = null,
+        )
+        Text(
+            text = "Jetpack Compose tutorial",
+            fontSize = 24.sp,
+            fontWeight = FontWeight.Bold,
+            modifier = Modifier.padding(start = 16.dp, end = 16.dp),
         )
 
     }
